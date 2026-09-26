@@ -1,0 +1,32 @@
+# Compiled programs and build output
+*.exe
+*.o
+*.obj
+*.out
+*.pdb
+*.ilk
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+a.out
+build/
+output/
+
+# Local editor settings and Competitive Programming Helper data
+.vscode/
+.vs/
+.idea/
+.cph/
+
+# Scratch code and local input/output
+/Test.cpp
+/input.txt
+/output.txt
+
+# OS metadata and local secrets
+.DS_Store
+Thumbs.db
+.env
+.env.*
