@@ -26,7 +26,19 @@ const ll LINF = 1e18 + 7;
 
 void solve() {
     
-    
+    int n;
+    cin >> n;
+    int x = 0;
+    for(int i = 0; i < n; i++){
+        int t;
+        cin >> t;
+        x ^= t;
+    }
+    if(n%2 == 0 && x != 0){
+        cout << -1 << endl;
+        return;
+    }
+    cout << x << endl;
 
 }
 

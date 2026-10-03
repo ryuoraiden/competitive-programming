@@ -26,7 +26,9 @@ const ll LINF = 1e18 + 7;
 
 void solve() {
     
-    
+    int n;
+    cin >> n;
+    cout << n*3;
 
 }
 
@@ -35,7 +37,7 @@ int main() {
     cin.tie(NULL);
     
     int t = 1;
-    cin >> t;
+    // cin >> t;
     
     while (t--) {
         solve();

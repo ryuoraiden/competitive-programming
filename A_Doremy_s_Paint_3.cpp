@@ -26,7 +26,21 @@ const ll LINF = 1e18 + 7;
 
 void solve() {
     
-    
+    int n;
+    cin >> n;
+    vi a(n);
+    map<int,int> mp;
+    for(auto &x:a){
+        cin >> x;
+        mp[x]++;
+    }
+
+    if(mp.size() > 2) no();
+    else{
+        if(abs(mp.begin()->second - mp.rbegin()->second) <= 1) yes();
+        else no();
+    }
+
 
 }
 

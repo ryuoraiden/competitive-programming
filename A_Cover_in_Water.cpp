@@ -26,8 +26,20 @@ const ll LINF = 1e18 + 7;
 
 void solve() {
     
-    
+    int n;
 
+    string s;
+
+    cin >> n >> s;
+
+    int p = 0, ans = 0;
+
+    for(int i = 0; i < n; i++){
+        if(i < n - 2 && s.substr(i,3) == "..."){p = 1; break;}
+        if(s[i] == '.') ans++;
+    }
+    if(p) cout << 2 << endl;
+    else cout << ans << endl;
 }
 
 int main() {

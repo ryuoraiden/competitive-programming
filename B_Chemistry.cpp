@@ -14,11 +14,11 @@ using pll = pair<ll, ll>;
 #define endl "\n"
 
 inline void yes() {
-    cout << "Yes" << endl;
+    cout << "YES" << endl;
 }
 
 inline void no() {
-    cout << "No" << endl;
+    cout << "NO" << endl;
 }
 
 const int INF = 1e9 + 7;
@@ -26,7 +26,22 @@ const ll LINF = 1e18 + 7;
 
 void solve() {
     
-    
+    int n,k;
+    cin >> n >> k;
+    string s;
+    cin >> s;
+    int e = 0, o = 0;
+    unordered_map<int,int> freq;
+    for(char c:s) freq[c-'a']++;
+
+    for(int i = 0; i < 26; i++){
+        if(freq[i]){
+            if(freq[i]%2) o++;
+            else e++;
+        }
+    }
+    if(o > k + 1) no();
+    else yes();
 
 }
 
